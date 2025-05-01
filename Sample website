@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MY Profile</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #121212;
+      color: white;
+      text-align: center;
+      padding: 40px 10px;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #00ffff;
+      margin-bottom: 20px;
+      text-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+    }
+
+    .airdrop-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: #1a1a1a;
+      border: 2px solid #333;
+      border-radius: 12px;
+      padding: 20px;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      border-color: #00ffff;
+      box-shadow: 0 0 25px rgba(0, 255, 255, 0.5);
+    }
+
+    .card img {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+      margin-bottom: 15px;
+    }
+
+    .card a {
+      font-size: 1.2rem;
+      color: #00ffff;
+      text-decoration: none;
+      font-weight: bold;
+      display: block;
+      margin-top: 10px;
+    }
+
+    .card a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 40px;
+      color: #ccc;
+      font-size: 0.9rem;
+    }
+
+    @media screen and (max-width: 600px) {
+      h1 { font-size: 2rem; }
+      .card img { width: 60px; }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Airdrop Opportunities 🚀</h1>
+
+  <div class="airdrop-list">
+    <!-- Airdrop 1 -->
+    <div class="card">
+      <img src="https://cryptologos.cc/logos/layerzero-logo.png" alt="LayerZero Logo" />
+      <a href="https://layerzero.foundation/airdrop" target="_blank">LayerZero Airdrop</a>
+    </div>
+
+    <!-- Airdrop 2 -->
+    <div class="card">
+      <img src="https://cryptologos.cc/logos/zksync-logo.png" alt="ZKSync Logo" />
+      <a href="https://zksync.io/airdrop" target="_blank">ZKSync Airdrop</a>
+    </div>
+
+    <!-- Airdrop 3 -->
+    <div class="card">
+      <img src="https://cryptologos.cc/logos/optimism-ethereum-logo.png" alt="Optimism Logo" />
+      <a href="https://app.optimism.io/airdrop" target="_blank">Optimism Airdrop</a>
+    </div>
+
+    <!-- Add more airdrops here -->
+  </div>
+
+  <footer>
+    Join our <a href="YOUR_SAMPLE_LINK_OR TWITTER" target="_blank">Your Name</a> for more updates!
+  </footer>
+
+</body>
+</html>
